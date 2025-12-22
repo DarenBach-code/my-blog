@@ -16,10 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="overflow-hidden">
-        <main className="bg-neutral-300 h-lvh w-screen text-black">
+        <main className="bg-stone-200 h-lvh w-screen text-black">
           <Header />
           {children}
-          {/* <Footer /> */}
         </main>
       </body>
     </html>
