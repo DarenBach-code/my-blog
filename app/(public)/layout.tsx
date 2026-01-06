@@ -1,6 +1,5 @@
 import "@/app/globals.css";
 import type { Metadata } from 'next';
-import Header from "@/components/publicHeader";
 
 export const metadata: Metadata = {
   title: 'My App',
@@ -17,7 +16,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="overflow-hidden">
         <main className="bg-stone-200 h-lvh w-screen text-black">
-          <Header />
           {children}
         </main>
       </body>
