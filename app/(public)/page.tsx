@@ -1,5 +1,6 @@
 import { anton } from "@/lib/fonts";
 import { Signup, Login } from "@/components/signup-and-login-buttons/bothButtons";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -13,16 +14,15 @@ export default function HomePage() {
           </div>
         </nav>
       </header>
-      <div className="grid grid-cols-2 h-">
-        <div className="flex items-center justify-center">
-          <div className="flex items-center justify-center">
-            Image
-          </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <h1 className="text-6xl font-bold">Your Bold Text Here</h1>
-        </div>
-      </div>
+      <section className="relative w-screen h-[calc(100vh-73px)] overflow-hidden">
+        <Image 
+          src="/landing-page-design.svg" 
+          alt="Homepage Image" 
+          fill
+          className="object-cover scale-100 sm:max-md:scale-130 md:scale-110 lg:scale-150"
+          priority
+        />
+      </section>
     </>
   );
 }
